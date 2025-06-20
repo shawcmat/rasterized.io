@@ -1,0 +1,156 @@
+{
+    "sheets": [
+        {
+            "name": "db",
+            "description": "Full database",
+            "displayColumn": "id",
+            "guid": "a2e35aff-ebdb-4483-93ef-07437c4d5d88",
+            "columns": [
+                {
+                    "typeStr": "text",
+                    "guid": "c69028fa-b699-4449-999b-320acc7d460f",
+                    "name": "Name",
+                    "description": "Name of the dataset",
+                    "defaultValue": "NA",
+                    "iconName": "newText",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text"
+                    }
+                },
+                {
+                    "typeStr": "float",
+                    "guid": "2a9d2863-17fe-43bf-a40e-7231f1db48a0",
+                    "description": "Pixel resolution of raster data",
+                    "name": "Pixel resolution",
+                    "min": 0,
+                    "max": 1000000,
+                    "defaultValue": 0,
+                    "iconName": "newFloat",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "min": "float",
+                        "max": "float",
+                        "defaultValue": "float"
+                    }
+                },
+                {
+                    "typeStr": "enum",
+                    "guid": "0572e807-1ed7-4785-8395-7d667da27fd6",
+                    "name": "Resolution unit",
+                    "description": "Unit of measurement for pixel resolution",
+                    "options": "M, Km, Ha, Mi, ArcSec",
+                    "defaultValue": "m",
+                    "iconName": "newEnum",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text",
+                        "options": "text"
+                    }
+                },
+                {
+                    "typeStr": "int",
+                    "guid": "c6f8cbd6-7d01-4a33-948c-eeebce6dbcf5",
+                    "description": "First year of data availability",
+                    "name": "Year Start",
+                    "min": -10000,
+                    "max": 100000,
+                    "defaultValue": 0,
+                    "iconName": "newInt",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "min": "int",
+                        "max": "int",
+                        "defaultValue": "int"
+                    }
+                },
+                {
+                    "typeStr": "int",
+                    "guid": "23300154-868f-44a1-b387-62a08e73fbca",
+                    "description": "Last year of data availability",
+                    "name": "Year End",
+                    "min": -10000,
+                    "max": 100000,
+                    "defaultValue": 0,
+                    "iconName": "newInt",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "min": "int",
+                        "max": "int",
+                        "defaultValue": "int"
+                    }
+                },
+                {
+                    "typeStr": "text",
+                    "guid": "99069018-a299-4c97-be75-0e77f41b57f4",
+                    "name": "link address",
+                    "description": "Address of dataset",
+                    "defaultValue": "",
+                    "iconName": "newText",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "text"
+                    }
+                },
+                {
+                    "typeStr": "longtext",
+                    "guid": "28c10e93-2be2-458b-af2b-838423001a97",
+                    "name": "Description",
+                    "description": "Longer description of the data.",
+                    "defaultValue": "No description",
+                    "iconName": "newLongText",
+                    "configurable": {
+                        "name": "text",
+                        "description": "text",
+                        "defaultValue": "longtext"
+                    }
+                }
+            ],
+            "lines": [
+                {
+                    "guid": "e8d8da78-ea7e-4f96-a047-43dce0fb5223",
+                    "id": "0",
+                    "Name": "GlobPop",
+                    "Pixel resolution": 30,
+                    "Resolution unit": "ArcSec",
+                    "Year Start": 1990,
+                    "Year End": 2020,
+                    "link address": "https://zenodo.org/records/10088105",
+                    "Description": "GlobPOP, a new continuous global gridded population product with a high-precision spatial resolution of 30 arcseconds from 1990 to 2020. Our data-fusion framework is based on cluster analysis and statistical learning approaches, which intends to fuse the existing five products(Global Human Settlements Layer Population (GHS-POP), Global Rural Urban Mapping Project (GRUMP), Gridded Population of the World Version 4 (GPWv4), LandScan Population datasets and WorldPop datasets to a new continuous global gridded population."
+                },
+                {
+                    "guid": "34f9478e-9449-4a9a-a13a-7e9898ee66d7",
+                    "id": "1",
+                    "Name": "Nighttime Lights",
+                    "Pixel resolution": 500,
+                    "Resolution unit": "M",
+                    "Year Start": 2012,
+                    "Year End": 2025,
+                    "link address": "https://www.earthdata.nasa.gov/topics/human-dimensions/nighttime-lights",
+                    "Description": "Remote sensing of nighttime light emissions offers a unique perspective for investigations into human behaviors, such as tracking the expansion of urban areas or assessing power outages caused by natural disasters such as hurricanes, and biological and ecological studies researching how artificial lights influences nature. "
+                }
+            ],
+            "hidden": false,
+            "isProps": false,
+            "configurable": {
+                "name": "text",
+                "description": "text",
+                "displayColumn": "columnSelect@name",
+                "columnSelect@name@displayColumn": {
+                    "allowedTypes": [
+                        "int",
+                        "float",
+                        "text",
+                        "longtext"
+                    ]
+                }
+            }
+        }
+    ]
+}

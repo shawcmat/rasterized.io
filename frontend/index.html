@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>rasterized.io</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-sprite" aria-label="Earth spinning logo"></div>
+        <span class="logo-text">rasterized.io</span>
+      </div>
+    </header>
+    <main>
+      <form id="search-form" autocomplete="off">
+        <div class="search-bar">
+          <input type="text" id="query" placeholder="Search datasets..." required>
+          <button type="submit">🔍</button>
+        </div>
+        <button type="button" class="search-advanced-toggle" aria-expanded="false" aria-controls="search-advanced" style="display:none;">More options</button>
+        <div class="search-advanced" id="search-advanced">
+          <select id="topic">
+            <option value="">All Topics</option>
+            <option value="climate">Climate</option>
+            <option value="landcover">Land Cover</option>
+            <option value="population">Population</option>
+            <!-- Add more topics as needed -->
+          </select>
+          <div class="resolution-group">
+            <input type="number" id="min-resolution" placeholder="Min resolution" min="0" step="any" inputmode="decimal">
+            <select id="resolution-unit">
+              <option value="m">m</option>
+              <option value="km">km</option>
+              <option value="mi">mi</option>
+              <!-- Add more units as needed -->
+            </select>
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+  <div class = "container">
+    <section id="results"></section>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>
